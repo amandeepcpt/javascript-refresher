@@ -1,0 +1,10 @@
+- DOM Manipulation using methods
+  - document.getElementById
+  - document.getElementByClassName
+  - document.querySelector
+  - document.querySelectorAll
+- Functions (Arrow and ES5)
+- Template Literals
+- DOM Events (onclick / onchange / onfocus / onblur)
+- Event listeners in DOM, Add / Remove event listeners
+- Event Bubbling

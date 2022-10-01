@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+  </head>
+  <body>
+    <button onclick="alertHello('Rahul')">Say Hello</button>
+    <input
+      id="input-element"
+      type="text"
+      onfocus="onFocus()"
+      onblur="onBlur()"
+      placeholder="Enter your name"
+    />
+    <br />
+    <br />
+
+    <textarea
+      placeholder="Say something about yourself.."
+      rows="8"
+      oninput="onTextAreaChange(event)"
+    ></textarea>
+
+    <p id="about-me-paragraph">Please write something about you</p>
+
+    <input type="text" oninput="onNameInputChange(event)" />
+    <button id="button" onclick="alertName()">Alert Name</button>
+
+    <!-- Event Bubbling -->
+    <div style="padding: 1rem; background-color: red" onclick="onClickDiv()">
+      <button onclick="onClickBtn(event)">Click Me</button>
+    </div>
+
+    <button id="js-button">Hello JavaScript</button>
+
+    <div>
+      <button id="add-btn">Add</button>
+      <p id="counter">0</p>
+      <button id="remove-btn">Subtract</button>
+    </div>
+
+    <script src="./dom-events.js"></script>
+  </body>
+</html>
