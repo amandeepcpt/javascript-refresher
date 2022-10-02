@@ -78,3 +78,42 @@ document.getElementById("remove-btn").addEventListener("click", function () {
 
   counterElement.innerText = count;
 });
+
+// add and remove event list
+var printBtn = document.getElementById("print-btn");
+
+function onPrint() {
+  console.log("Rahul is my name!");
+}
+
+printBtn.addEventListener("click", onPrint);
+
+setTimeout(() => {
+  // code i write here
+  console.log("REMOVED EVENT LISTENER!");
+  printBtn.removeEventListener("click", onPrint);
+}, 5000);
+
+// 1s = 1000
+
+var studentArrowFn = {
+  name: "Rahul",
+  age: 20,
+  printMyName: () => {
+    console.log(this, "this keyword in arrow fn");
+  },
+};
+
+studentArrowFn.printMyName();
+
+var studentES5 = {
+  name: "Rahul",
+  age: 20,
+  printMyName() {
+    console.log(this, "this keyword inside es5");
+  },
+};
+
+// arrow functions dont have their own this (keyword)
+
+studentES5.printMyName();
