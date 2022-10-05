@@ -14,7 +14,8 @@ var onBlur = () => {
   console.log("Elemetn loses focus!");
 };
 
-var onTextAreaChange = (event) => {
+var onTextAreaChange = (event, name) => {
+  console.log(event, "Event!!");
   // var textAreaElement = document.getElementById("about-me");
   // textAreaElement.setAttribute();
   var text = event.target.value;
@@ -117,3 +118,28 @@ var studentES5 = {
 // arrow functions dont have their own this (keyword)
 
 studentES5.printMyName();
+
+var table = 2;
+var maxNumber = 10;
+
+document.getElementById("table-num").addEventListener("input", (event) => {
+  table = event.target.value;
+});
+
+document.getElementById("max-num").addEventListener("input", (event) => {
+  maxNumber = event.target.value;
+});
+
+document.getElementById("print-table").addEventListener("click", () => {
+  const tableElement = document.getElementById("table-output");
+
+  var string = "";
+
+  for (let i = 1; i <= maxNumber; i++) {
+    string += `
+      ${table} * ${i} = ${table * i}
+    `;
+  }
+
+  tableElement.innerText = string;
+});

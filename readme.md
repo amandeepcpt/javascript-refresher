@@ -16,3 +16,17 @@
 - Variables and Variable Scoping (var, let, const / Functional scoping, block scoping)
 - Primitive and reference data type
 - typeof Operator
+
+# 5 OCT 2022
+
+- **Operators**
+
+  - Assignment Operators
+  - Arithmetic Operators
+  - Comparison Operators
+  - Logical Operators
+  - String Operators
+  - Other Operators
+
+- Switch Case Statement
+- Array Destructuring / Object Destructuring
