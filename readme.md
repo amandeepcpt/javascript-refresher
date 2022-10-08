@@ -35,7 +35,8 @@
 
 - Rest and Spread Operator
 
-  - Looping
+- Looping
+
   - While Loop
   - For Loop
   - For In Loop
