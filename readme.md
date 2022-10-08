@@ -30,3 +30,15 @@
 
 - Switch Case Statement
 - Array Destructuring / Object Destructuring
+
+# 8 OCT 2022
+
+- Rest and Spread Operator
+
+  - Looping
+  - While Loop
+  - For Loop
+  - For In Loop
+  - For Of Loop
+
+- Working with Date Object

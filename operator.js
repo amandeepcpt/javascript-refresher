@@ -247,24 +247,108 @@ var { name: student_name } = student;
 console.log(student_name, "name of student");
 
 // REST AND SPREAD OPERATOR
+// Spread Operator
+// In Array
+var set1 = [1, 2, 3, 4, 5];
+// var set2 = set1;
+// set2[2] = 10;
+
+// creates a shallow copy
+// var set2 = [...set1];
+// var set2 = set1.slice();
+// set2[2] = 10;
+// console.log({ set1, set2 }, "op");
+
+// merge two arrays into one
+// var set2 = [6, 7, 8, 9, 10];
+// console.log(set1, "set1");
+// console.log(set2, "set2");
+// var merged_set = [...set2, ...set1];
+// console.log(merged_set, "op");
+
+// // In Object
+// // Create a shallow copy
+// var student = { id: 1, name: "Rahul", age: 20 };
+// // var student_copy = student;
+// var student_copy = { ...student };
+// student_copy["name"] = "Aman";
+
+// console.log(student, "student");
+// console.log(student_copy, "student_copy");
+
+// Merge two object
+// var student1 = { id: 1, name: "Rahul", age: 20 };
+// var student2 = { id: 2, name: "Aman", age: 30 };
+
+// var student_example = {
+//   // id: 1,
+//   // name: "Rahul",
+//   // age: 20,
+//   id: 2,
+//   name: "Aman",
+//   age: 30,
+// };
+// console.log(student_example, "student_example");
+
+// var student_merge = { ...student1, ...student2 };
+// console.log(student_merge);
+
+// es5
+function printArguments() {
+  // ...array - rest operator
+  console.log(arguments, "arguments");
+  // console.log(array, "array");
+}
+
+var array = [1, 2, 3, 4, 5, "Rahul", "Aman"];
+
+// spread opeator
+printArguments(...array);
+
+// Spread Operator
+// function printArguments(...array) {
+//   // ...array - rest operator
+//   console.log(array, "array");
+// }
+
+// var array = [1, 2, 3, 4, 5, "Rahul", "Aman"];
+
+// var student = { id: 1, name: "Rahul", age: 20 };
+// // delete student.age
+// // function removeAge({ age, ...rest }) {
+// //   // delete stu.age;
+// //   return rest;
+// // }
+
+// // var result = removeAge(student);
+
+// var { age, ...rest } = student;
+// console.log(student, "student 1");
+// console.log(age, "age");
+// console.log(rest, "result without age property!");
+
+// Rest operator with Array
+var number = [1, 2, 3, 4, 5];
+var [first, ...rest] = number;
+console.log(number, "number");
+console.log(first, "first");
+console.log(rest, "rest");
 
 // Spread Operator - Array / Object
 // Array
 // ["Audi", "BMW", "Ford", "Mercedes"]
 var cars1 = ["Audi", "BMW", "Ford", "Mercedes"];
-var cars2 = cars1;
+var cars2 = cars1.slice();
 
 // primitive data type
 // var age1 = 28;
-// // copy
+// copy
 // var age2 = age1;
 // age1 = 30;
 
 // console.log({ age1, age2 });
 
-console.log({ cars1, cars2 });
+// console.log({ cars1, cars2 });
 
 cars2[1] = "New Car";
 console.log({ cars1, cars2 });
-
-// Rest Opeartor - Array / Object
