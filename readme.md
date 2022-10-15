@@ -43,3 +43,41 @@
   - For Of Loop
 
 - Working with Date Object
+
+# 15 OCT 2022
+
+- Higher Order Functions (JS Array Functions)
+  - Array.prototype.forEach
+  - Array.prototype.filter
+  - Array.prototype.map
+  - Array.prototype.some
+  - Array.prototype.every
+  - Array.prototype.find
+  - Array.prototype.findIndex
+  - Array.prototype.reduce
+- Null and Undefined
+- Optional Chaining (?)
+- Nullish coalescing (??)
+
+var students = [
+{name: 'John', grade: 8, gender: 'M'},
+{name: 'Sarah', grade: 12, gender: 'F'},
+{name: 'Bob', grade: 16, gender: 'M'},
+{name: 'Johnny', grade: 2, gender: 'M'},
+{name: 'Ethan', grade: 4, gender: 'M'},
+{name: 'Paula', grade: 18, gender: 'F'},
+{name: 'Donald', grade: 5, gender: 'M'},
+{name: 'Jennifer', grade: 13, gender: 'F'},
+{name: 'Courtney', grade: 15, gender: 'F'},
+{name: 'Jane', grade: 9, gender: 'F'}
+]
+
+Tasks -
+
+- The average grade of this classroom
+- The average grade of the boys
+- The average grade of the girls
+- The higher grade among the boys // Bob
+- The higher grade among the girls // Paula
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
