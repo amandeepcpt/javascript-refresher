@@ -81,3 +81,16 @@ Tasks -
 - The higher grade among the girls // Paula
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+# 16 Oct 2022
+
+- Local Storage and Session Storage
+- Fetch API.
+- Using Promises with fetch api.
+- Using Callback with fetch api.
+
+# 22 Oct 2022
+
+- Discussed the DVA flow between component, effects and reducer.
+- Discussed connecting a global state to the component using connect method.
+- Covered default export/import and named export/import.
