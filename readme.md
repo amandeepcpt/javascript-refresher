@@ -94,3 +94,7 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 - Discussed the DVA flow between component, effects and reducer.
 - Discussed connecting a global state to the component using connect method.
 - Covered default export/import and named export/import.
+
+# 23 Oct 2022
+
+- Discussed the Promises and Async await
